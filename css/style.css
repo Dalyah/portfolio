@@ -13,7 +13,6 @@ header{
   color: #807363;
   font-weight: bold;
   width: 100%;
-  /* padding: 2em; */
   vertical-align: bottom;
 }
 ul{
@@ -22,7 +21,7 @@ ul{
   list-style: none;
 }
 footer{
-  text-align: right;
+  text-align: center;
   padding-right: 4em;
   color: #654925;
 }
@@ -47,10 +46,10 @@ footer{
   padding-left: 2em;
   padding-right: 2em;
 }
-.nav_list{
+.nav-list{
   border: solid 2px #2d3c49;
 }
-.nav_item{
+.nav-item{
   display: inline-block;
   width:25%;
   padding: 25px;
@@ -70,7 +69,7 @@ main{
   padding-left: 2em;
   padding-right: 2em;
 }
-.section_title{
+.section-title{
   color: #d83f28;
   display: block;
   text-transform: uppercase;
@@ -82,11 +81,11 @@ main{
 /*
 * About Me
 */
-.about_me{
+.about-me{
   padding: 2em;
   vertical-align: top;
 }
-.about_text{
+.about-text{
   font-size: 16pt;
   font-weight: bold;
   display: inline-block;
@@ -97,7 +96,7 @@ main{
   padding-top: 2em;
   text-align: left;
 }
-.about_img{
+.about-img{
   width:50%;
   display: inline-block;
   vertical-align: top;
@@ -108,10 +107,10 @@ main{
 .projects{
   padding: 2em;
 }
-.project_title{
+.project-title{
   color: #654925;
 }
-.project_1, .project_2, .project_3{
+.project-1, .project-2, .project-3{
   display: inline-block;
   padding-right: 2em;
   padding-top: 2em;
@@ -124,15 +123,15 @@ main{
 .contact{
   padding: 2em;
 }
-.contact_email{
+.contact-email{
   padding-right: 2em;
   width: 49%;
 }
-.contact_social{
+.contact-social{
   padding-right: 2em;
   width:49%;
 }
-.contact_social ul li{
+.contact-social ul li{
   display: inline-block;
   padding:10px;
 }
@@ -154,7 +153,7 @@ nav a,  button {
   }
 }
 @media screen and (max-width: 890px){
-  .project_1, .project_2, .project_3{
+  .project-1, .project-2, .project-3{
     width:49%;
   }
 }
@@ -171,7 +170,7 @@ nav a,  button {
     transform: translate(0, 0);
     position:static;
   }
-  .nav_item{
+  .nav-item{
     display: block;
     width:100%;
   }
@@ -181,20 +180,20 @@ nav a,  button {
 }
 
 @media screen and (max-width: 700px){
-  .project_1, .project_2, .project_3{
+  .project-1, .project-2, .project-3{
     width:100%;
   }
-  .project_1 img, .project_2 img, .project_3 img{
+  .project-1 img, .project-2 img, .project-3 img{
     width:100%;
     height: 200px;
   }
-  .contact_social, .contact_email{
+  .contact-social, .contact-email{
     width: 100%;
   }
-  .about_img, .about_text{
+  .about-img, .about-text{
     width: 100%;
   }
-  .about_text{
+  .about-text{
     padding-left: 0em;
   }
   .title{
