@@ -41,9 +41,6 @@ footer{
 #menu{
   display: none;
 }
-.nav{
-  border: bold 2px #2d3c49;
-}
 .nav_list{
   border: solid 2px #2d3c49;
 }
@@ -70,7 +67,7 @@ main{
 .section_title{
   color: #d83f28;
   display: block;
-  transform: uppercase;
+  text-transform: uppercase;
 }
 .container{
   display: flex;
