@@ -1,5 +1,5 @@
 *{
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 body, html {
   margin: 0;
@@ -16,6 +16,17 @@ header{
   padding: 2em;
   vertical-align: bottom;
 }
+ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+footer{
+  text-align: right;
+  padding-right: 4em;
+  color: #654925;
+}
+
 .logo {
   display: inline-block;
   height: 100%;
@@ -23,21 +34,18 @@ header{
 .title {
   display: inline-block;
   float: right;
-  height: 100%;
 }
-
 /*
 * Navigation
 */
-
+#menu{
+  display: none;
+}
 .nav{
-  width: 100%;
+  border: bold 2px #2d3c49;
 }
 .nav_list{
-  width:100%;
-  padding: 0;
-  margin: 0;
-  list-style: none;
+  border: solid 2px #2d3c49;
 }
 .nav_item{
   display: inline-block;
@@ -59,46 +67,131 @@ main{
   padding-left: 2em;
   padding-right: 2em;
 }
+.section_title{
+  color: #d83f28;
+  display: block;
+  transform: uppercase;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+}
 /*
 * About Me
 */
 .about_me{
-  /* display: flex;
-  flex_wrap: wrap; */
-  padding-left: 4em;
-  padding-right: 2em;
-}
-.about_me h3{
-  color: #d83f28;
-  display: block;
-  width: 20%;
+  padding: 2em;
+  vertical-align: top;
 }
 .about_text{
   font-size: 16pt;
   font-weight: bold;
   display: inline-block;
   width: 49%;
-  vertical-align: middle;
+  vertical-align: top;
+  padding-right: 2em;
+  padding-left:  2em;
   padding-top: 2em;
-  padding-left: 2em;
-  text-align: justify;
-
+  text-align: left;
 }
 .about_img{
   width:50%;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
 }
-
+/*
+* Projects
+*/
+.projects{
+  padding: 2em;
+}
+.project_title{
+  color: #654925;
+}
+.project_1, .project_2, .project_3{
+  display: inline-block;
+  padding-right: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  width: 33%;
+}
+/*
+* Contact Me
+*/
+.contact{
+  padding: 2em;
+}
+.contact_email{
+  padding-right: 2em;
+  width: 49%;
+}
+.contact_social{
+  padding-right: 2em;
+  width:49%;
+}
+.contact_social ul li{
+  display: inline-block;
+  padding:10px;
+}
 /*
 * Responsive
 */
-
 img, embed, object, video {
 	max-width: 100%;
 }
-
 nav a,  button {
 	min-width: 48px;
 	min-height: 48px;
+}
+@media screen and (min-width: 1050px){
+  body{
+    width:1050px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 890px){
+  .project_1, .project_2, .project_3{
+    width:49%;
+  }
+}
+@media screen and (max-width: 855px){
+  nav {
+    width:100%;
+    position: absolute;
+    /* This trasform moves the drawer off canvas. */
+    -webkit-transform: translate(0,-800px);
+    transform: translate(0,-800px);
+  }
+  nav.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    position:static;
+  }
+  .nav_item{
+    display: block;
+    width:100%;
+  }
+  #menu{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .project_1, .project_2, .project_3{
+    width:100%;
+  }
+  .project_1 img, .project_2 img, .project_3 img{
+    width:100%;
+    height: 200px;
+  }
+  .contact_social, .contact_email{
+    width: 100%;
+  }
+  .about_img, .about_text{
+    width: 100%;
+  }
+  .title{
+    float: none;
+  }
 }

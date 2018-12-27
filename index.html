@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, intial-scale=1.0">
@@ -11,13 +11,12 @@
     <div class="logo">
       <img  src="img/logo.png" alt="logo">
     </div>
-
     <div class="title">
       <h2>Dalyah Aljamal</h2>
       <h3>Full-Stack Developer</h3>
     </div>
-    <hr />
-    <nav class="nav">
+    <a id="menu"><img src="img/menu.png" alt="menu"/></a>
+    <nav id="drawer" class="nav">
       <ul class="nav_list">
         <li class="nav_item">
           <a href="index.html#about">About Me</a>
@@ -33,26 +32,68 @@
   </header>
   <main>
     <section id="about" class="about_me">
-      <h3>About Me</h3>
-      <div class="about_img">
-          <img src="img/coding.jpg"  alt="about me">
-      </div>
-      <div class="about_text">
-        I am a Computer Engineering graduate. I am interested in Web Development and Machine Learning
-        skbfjsnc dfbksdbvdkj hfsjsk fsdkdjd sjdhfosfj hpgj vjfjsjdhfjd urfskjkfs hfsdhfs hdfjd hdfjsdh dff
-        fsdbfjd hdfdkdkfg fsdksgdl fdjghdfkgdf ddjhu eruweyf uywlg halt ;jealti'r] URURTQTJV
-      </div>
+      <h3 class="section_title">About Me</h3>
+      <section class="container">
+        <div class="about_img">
+            <img src="img/coding.jpg"  alt="about me">
+        </div>
+        <div class="about_text">
+          I am a Computer Engineering graduate. I am interested in Web Development and Machine Learning.
+        </div>
+      </section>
     </section>
-    <section id="projects" class="projects">
 
+    <section id="projects" class="projects">
+        <h3 class="section_title">Projects</h3>
+        <section class="container">
+          <div class="project_1">
+            <img src="img/movie.jpg" height="165" alt="Project 1">
+            <h4 class="project_title">Movie Trailer</h4>
+            <div class="project_des">
+              https://github.com/Dalyah/geeks-codes
+            </div>
+          </div>
+
+          <div class="project_2">
+            <img src="img/portfolio.jpg" height="165" alt="Project 2">
+            <h4 class="project_title">Portfolio</h4>
+            <div class="project_des">
+              https://github.com/Dalyah/portfolio
+            </div>
+          </div>
+
+          <div class="project_3">
+            <img src="img/log.jpg" height="165" alt="Project 3">
+            <h4 class="project_title">Log Analysis</h4>
+            <div class="project_des">
+              https://github.com/Dalyah/log-analysis
+            </div>
+          </div>
+        </section>
     </section>
     <section id="contact" class="contact">
+      <h3 class="section_title">Connect With Me</h3>
+      <section class="container">
+        <div class="contact_email">
+          <p> If you have an quesstion or suggestion, you can reach me by email:</p>
+          <p> dalyah_se@outlook.com</p>
+        </div>
+        <div class="contact_social">
+          <p> You can also connect with me through my social acounts:</p>
+            <ul>
+              <li> <a href="https://www.linkedin.com/in/dalyah-aljamal"><img src="img/linkedin.png" alt="linkedin"/></a></li>
+              <li> <a href="https://github.com/Dalyah"><img src="img/github.png" alt="github" /></a></li>
+              <li> <a href="https://www.instagram.com/dalyah_aj"><img src="img/instagram.png" alt="instagram" /></a></li>
+              <!-- <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+            </ul>
+        </div>
+      </section>
 
     </section>
   </main>
   <footer>
-
+    <p class="copyright-text">Copyright © 2018 Eng.Dalyah</p>
   </footer>
-
+  <script src="js/menu.js"></script>
 </body>
 </html>
